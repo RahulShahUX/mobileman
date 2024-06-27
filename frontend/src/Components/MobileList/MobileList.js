@@ -58,7 +58,7 @@ export default function MobileList() {
         <Container className="py-4">
             <Row className="mb-4">
                 <Col sm={6}>
-                    {compareMobileArray.length == 2 &&
+                    {compareMobileArray.length >= 2 &&
                         <Button variant="success" onClick={() => { compareMobile() }}>Compare</Button>
                     }
                 </Col>

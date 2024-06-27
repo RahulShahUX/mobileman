@@ -13,28 +13,29 @@ export default function MobileCard(props) {
     const dispatch = useDispatch();
     const selectMobile = (data) => {
         setSelect(!isSelected);
-        if(!isSelected) {
-            // console.log("in if");
-            // dispatch(SELECT_MOBILE(data))
-            // console.log("compareMobileArray 19", compareMobileArray);
+        // if(!isSelected) {
+        //     console.log("in if");
+        //     dispatch(SELECT_MOBILE(data))
+        //     // console.log("compareMobileArray 19", compareMobileArray);
             
-            const updatedCompareProducts = [...props.compareItemRef.current, data]
-            props.compareItemRef.current = updatedCompareProducts;
-            console.log("props.compareItemRef", props.compareItemRef.current);
-        }
-        else {
-            // console.log("in else");
-            // dispatch(SELECT_MOBILE(data))
-            const updatedCompareProducts = props.compareItemRef.current.filter((item)=>{
-                return item.id != data.id
-            })
-            props.compareItemRef.current = updatedCompareProducts;
-            console.log("props.compareItemRef", props.compareItemRef.current);
-        }
+        //     // const updatedCompareProducts = [...props.compareItemRef.current, data]
+        //     // props.compareItemRef.current = updatedCompareProducts;
+        //     // console.log("props.compareItemRef", props.compareItemRef.current);
+        // }
+        // else {
+        //     console.log("in else");
+        //     dispatch(SELECT_MOBILE(data))
+        //     // const updatedCompareProducts = props.compareItemRef.current.filter((item)=>{
+        //     //     return item.id != data.id
+        //     // })
+        //     // props.compareItemRef.current = updatedCompareProducts;
+        //     // console.log("props.compareItemRef", props.compareItemRef.current);
+        // }
+        dispatch(SELECT_MOBILE(data, isSelected))
         // setTimeout(()=>{
         //     console.log("compareMobileArray 18", compareMobileArray);
         // }, 3000)
-        dispatch(SELECT_MOBILE(props.compareItemRef.current))
+        // dispatch(SELECT_MOBILE(props.compareItemRef.current))
     }
     const editMobile = async (data) => {
         console.log("working", data)
@@ -86,21 +87,21 @@ export default function MobileCard(props) {
                     <Card className="mb-4">
                         <Card.Body>
                         {/* {JSON.stringify(props.compareItemRef.current)} */}
-                            <Card.Title>{props.mobileItem.name}</Card.Title>
+                            <Card.Title className="text-primary">{props.mobileItem.name}</Card.Title>
                             <Card.Text style={{marginLeft: "-3px"}} className="mb-0 align-items-center d-flex justify-content-between">
-                                <div>
+                                <span className="text-dark fw-bolder">
                                     <i className="bi bi-currency-rupee" style={{fontSize: "14px"}}></i>{Number(props.mobileItem.price).toLocaleString("en-IN")}
-                                </div>
+                                </span>
                                 <Badge bg="success">{props.mobileItem.rating} <i className="bi bi-star-fill"></i></Badge>
                             </Card.Text>
-                            <Card.Text>
+                            <div className="card-text my-2">
                                 <ul className="card-list">
                                     <li>{props.mobileItem.os}</li>
                                     <li>{props.mobileItem.storage}</li>
                                     <li>{props.mobileItem.color}</li>
                                     <li>{props.mobileItem.battery}</li>
                                 </ul>
-                            </Card.Text>
+                            </div>
                             <Button
                                 disabled={(!isSelected && compareMobileArray.length == 2)}
                                 variant={`${isSelected ? "secondary" : "primary"}`}

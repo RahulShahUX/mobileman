@@ -12,10 +12,9 @@
     content: "";
     position: absolute;
     left: 1px;
-    top: 50%;
-    transform: translateY(-50);
-    height: 5px;
-    width: 5px;
+    top: calc(50% - 1px);
+    height: 4px;
+    width: 4px;
     border-radius: 50%;
     background-color: #333;
 }

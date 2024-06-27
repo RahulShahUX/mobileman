@@ -44,11 +44,34 @@ export default function mobileReducer(state = initialState, action) {
                 })
             }
         case "SELECT_MOBILE":
-            console.log("Select Mobile", action.payload);
-            return {
-                ...state,
-                compareMobileArray: [...state.compareMobileArray, action.payload]
+            console.log("Select Mobile reducer", action.payload, action.payloadSelection);
+            console.log("compareMobileArray from reducer", state.compareMobileArray)
+            if(action.payloadSelection) {
+                console.log("product is already there");
+                return {
+                    ...state,
+                    // compareMobileArray: [...state.compareMobileArray, action.payload]
+                    compareMobileArray: state.compareMobileArray.filter((mobile)=> {
+                        console.log("mobile._id != action.payload._id", mobile._id, action.payload._id);
+                        return mobile._id != action.payload._id
+                    })
+                }
             }
+            else {
+                console.log("New Product added");
+                return {
+                    ...state,
+                    compareMobileArray: [...state.compareMobileArray, action.payload]
+                }
+            }
+            // return {
+            //     ...state,
+            //     // compareMobileArray: [...state.compareMobileArray, action.payload]
+            //     compareMobileArray: state.compareMobileArray.map((mobile)=> {
+            //         console.log("mobile._id != action.payload._id", mobile._id, action.payload._id);
+            //         return mobile._id != action.payload._id
+            //     })
+            // }
         default:
             return state;
 

@@ -3,8 +3,8 @@ import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 
 export default function MobileCompare() {
-    const compareMobileList = useSelector(state => state.compareMobileArray);
-    console.log("compareMobileList", compareMobileList);
+    // const compareMobileList = useSelector(state => state.compareMobileArray);
+    // console.log("compareMobileList", compareMobileList);
     const newcompareList = JSON.parse(localStorage.getItem("compareList"))
     if (newcompareList?.length > 0) {
         var mobileKey = Object.keys(newcompareList[0]);

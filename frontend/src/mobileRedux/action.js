@@ -10,10 +10,11 @@ export const FETCH_MOBILE_LIST = (mobile) => {
         payload: mobile
     }
 }
-export const SELECT_MOBILE = (mobile) => {
+export const SELECT_MOBILE = (mobile, selectedMobile) => {
     return {
         type: "SELECT_MOBILE",
-        payload: mobile
+        payload: mobile,
+        payloadSelection: selectedMobile
     }
 }
 export const ADD_MOBILE = (mobile) => {
