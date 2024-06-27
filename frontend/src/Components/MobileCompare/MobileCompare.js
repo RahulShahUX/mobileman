@@ -32,7 +32,7 @@ export default function MobileCompare() {
                                     return <tr key={index}>
                                         {(itemName != "_id" && itemName != "__v") && <td className="text-danger text-capitalize"><strong>{itemName}</strong></td>}
                                         {newcompareList.map((tdItem, index) => {
-                                            console.log("tdItem", tdItem[itemName], itemName);
+                                            // console.log("tdItem", tdItem[itemName], itemName);
                                             if(itemName != "_id" && itemName != "__v") {
                                                 return <td key={index} className="text-capitalize">{tdItem[itemName]}</td>
                                             }

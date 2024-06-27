@@ -38,7 +38,7 @@ export default function MobileCard(props) {
         // dispatch(SELECT_MOBILE(props.compareItemRef.current))
     }
     const editMobile = async (data) => {
-        console.log("working", data)
+        // console.log("working", data)
         setPopupShow(!popupShow);
         // const response = await axios.put(`http://localhost:8000/edit/mobile/${data._id}`, data);
         // console.log("response.data", response);

@@ -19,12 +19,14 @@ export default function Login() {
     const navigate = useNavigate();
 
     const formLogin = async (data) => {
-        console.log("data", data);
+        // console.log("data", data);
         try {
             const response = await axios.post("http://localhost:8000/login", data);
-            console.log("response", response.data.user);
+            // console.log("response", response.data.user);
             dispatch(USER_DETAILS(response.data.user))
-            localStorage.setItem("userDetails", JSON.stringify(response.data.user))
+            const {name, role} = response.data.user;
+            const userDetails = {name, role}
+            localStorage.setItem("userDetails", JSON.stringify(userDetails))
             navigate("/mobile");
         }
         catch (error) {

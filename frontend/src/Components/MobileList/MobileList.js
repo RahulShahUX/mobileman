@@ -30,7 +30,7 @@ export default function MobileList() {
         setPopupShow(!popupShow)
     }
     const newcompareList = JSON.parse(localStorage.getItem("compareList"))
-    console.log("newcompareList", newcompareList)
+    // console.log("newcompareList", newcompareList)
     useEffect(() => {
         const MobileListRes = async () => {
             try {
