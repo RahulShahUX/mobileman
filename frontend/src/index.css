@@ -1,0 +1,21 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import "bootstrap-icons/font/bootstrap-icons.css";
+.card-list {
+    padding: 0;
+    list-style: none;
+}
+.card-list li {
+    position: relative;
+    padding-left: 10px;
+}
+.card-list li:before {
+    content: "";
+    position: absolute;
+    left: 1px;
+    top: 50%;
+    transform: translateY(-50);
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: #333;
+}
