@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import MobileAdd from "../MobileAdd/MobileAdd";
 import axios from "axios";
 import { FETCH_MOBILE_LIST } from "../../mobileRedux/action";
+// import AuthContext from "../../AuthContext";
 
 export default function MobileList() {
     const [popupShow, setPopupShow] = useState(false);
@@ -30,6 +31,8 @@ export default function MobileList() {
         setPopupShow(!popupShow)
     }
     const newcompareList = JSON.parse(localStorage.getItem("compareList"))
+    // const {isUserLogged} = useContext(AuthContext)
+    // console.log("isUserLogged mobileList", isUserLogged);
     // console.log("newcompareList", newcompareList)
     useEffect(() => {
         const MobileListRes = async () => {

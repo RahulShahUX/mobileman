@@ -3,9 +3,10 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import "./Login.css";
 import axios from "axios";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { useDispatch } from "react-redux";
 import { USER_DETAILS } from "../../mobileRedux/action";
+import AuthContext from "../../AuthContext";
 
 export default function Login() {
     const [loginError, setLoginError] = useState(false);
@@ -18,6 +19,8 @@ export default function Login() {
 
     const navigate = useNavigate();
 
+    const { isUserLogged, authUser, unAuthUser } = useContext(AuthContext);
+
     const formLogin = async (data) => {
         // console.log("data", data);
         try {
@@ -27,6 +30,7 @@ export default function Login() {
             const {name, role} = response.data.user;
             const userDetails = {name, role}
             localStorage.setItem("userDetails", JSON.stringify(userDetails))
+            authUser(JSON.parse(localStorage.getItem("userDetails").name != ""));
             navigate("/mobile");
         }
         catch (error) {
