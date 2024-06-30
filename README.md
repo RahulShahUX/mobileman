@@ -9,17 +9,17 @@
 - [Mobile List - Admin](#mobile)
 - [Mobile Add](#add)
 - [Mobile Edit](#edit)
-- [Mobile List - Client](#mobile-user)
+- [Mobile List - User](#mobile-user)
 - [Mobile selection](#selection)
 - [Mobile Compare](#compare)
 - [User Logout](#logout)
 
 ## Introduction
-The **React Mobile Comparison App** is a web application that allows users to compare different mobile phones based on their specifications. The app provides a user-friendly interface for browsing, comparing, and viewing details of various mobile devices. There are 2 interfaces: 1. Admin and 2. Client
+The **React Mobile Comparison App** is a web application that allows users to compare different mobile phones based on their specifications. The app provides a user-friendly interface for browsing, and comparing the details of various mobile devices. There are 2 interfaces: 1. Admin and 2. User
 
 ## Login
 ![Logo](./frontend/public/ss/SS1.png)
-This is a Login Page. The Admin and Client can log in from the same login page and see the pages and content based on their permissions.
+This is a Login Page. The Admin and User can log in from the same login page and see the pages and content based on their permissions.
 
 ## Signup
 ![Logo](./frontend/public/ss/SS2.png)
@@ -41,7 +41,7 @@ This is an Edit Mobile form that will show once the Admin clicks the Edit Icon. 
 ![Logo](./frontend/public/ss/SS3.png)
 Admin can delete the mobile by clicking on the Delete icon on the mobile list page
 
-## Mobile List - Client
+## Mobile List - User
 ![Logo](./frontend/public/ss/SS7.png)
 This is a Mobile Listing page for Users. Users can select the mobile item that they want to compare.
 ![Logo](./frontend/public/ss/SS8.png)
