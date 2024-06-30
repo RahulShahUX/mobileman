@@ -1,7 +1,6 @@
 # React Mobile Comparison App
 
-![Logo](./public/logo.png)
-![Uploading image.png…]()
+![Logo](./frontend/public/logo.png)
 
 ## Table of Contents
 - [Introduction](#introduction)
