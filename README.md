@@ -34,7 +34,7 @@ This is a Mobile Listing page for Admin. Admin can manage the mobile listing by 
 This is an Add Mobile form that will show once the Admin clicks the Add Mobile button. Admin will fill in all the mobile information and save the form so the mobile will be added to the mobile listing page.
 
 ## Mobile Edit
-![Logo](./frontend/public/ss/SS4.png)
+![Logo](./frontend/public/ss/SS5.png)
 This is an Edit Mobile form that will show once the Admin clicks the Edit Icon. Admin will edit the mobile information and save the form so the mobile will be edited on the mobile listing page.
 
 ## Mobile Delete
