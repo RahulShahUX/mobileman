@@ -44,6 +44,8 @@ Admin can delete the mobile by clicking on the Delete icon on the mobile list pa
 ## Mobile List - User
 ![Logo](./frontend/public/ss/SS7.png)
 This is a Mobile Listing page for Users. Users can select the mobile item that they want to compare.
+
+
 ![Logo](./frontend/public/ss/SS8.png)
 The mobile items "Select" button will show as "Selected" once the user selects any mobile to compare and the "Compare Mobile" button will be visible once the user selects 2 mobiles for comparison. The user will be redirected to the Mobile Compare page.
 
