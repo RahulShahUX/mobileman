@@ -3,7 +3,7 @@
 ![Logo](./frontend/public/logo.svg)
 
 ## Table of Contents
-- [Introduction](#intro)
+- [Introduction](#introduction)
 - [Login](#login)
 - [Signup](#signup)
 - [Mobile List - Admin](#mobile)
