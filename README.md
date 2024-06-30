@@ -9,7 +9,7 @@
 - [Mobile List - Admin](#mobile)
 - [Mobile Add](#add)
 - [Mobile Edit](#edit)
-- [Mobile List - User](#Mobile List - User)
+- [Mobile List - User](#Mobile-List--User)
 - [Mobile selection](#selection)
 - [Mobile Compare](#compare)
 - [User Logout](#logout)
