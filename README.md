@@ -42,6 +42,15 @@ This is an Edit Mobile form that will show once the Admin clicks the Edit Icon. 
 Admin can delete the mobile by clicking on the Delete icon on the mobile list page
 
 ## Mobile List - Client
-![Logo](./frontend/public/ss/SS3.png)
-This is a Mobile Listing page for CLient.
+![Logo](./frontend/public/ss/SS7.png)
+This is a Mobile Listing page for Users. Users can select the mobile item that they want to compare.
+![Logo](./frontend/public/ss/SS8.png)
+The mobile items "Select" button will show as "Selected" once the user selects any mobile to compare and the "Compare Mobile" button will be visible once the user selects 2 mobiles for comparison. The user will be redirected to the Mobile Compare page.
 
+ ## Mobile Compare
+![Logo](./frontend/public/ss/SS9.png)
+This is a Mobile Compare page. Users can compare 2 mobiles.
+
+ ## User Logout
+![Logo](./frontend/public/ss/SS6.png)
+Users can see the Logout button once they click on the User Name and Role dropdown. After clicking the logout button the user will be logged out and will be redirected to the login page.
