@@ -11,7 +11,7 @@
 - [Mobile Edit](#mobile-edit)
 - [Mobile List - User](#mobile-list---user)
 - [Mobile Compare](#mobile-compare)
-- [User Logout](#user-logout)
+- [Logout](#logout)
 
 ## Introduction
 The **React Mobile Comparison App** is a web application that allows users to compare different mobile phones based on their specifications. The app provides a user-friendly interface for browsing and comparing the details of various mobile devices. There are two interfaces: Admin and User.
@@ -51,6 +51,6 @@ The mobile items "Select" button will show as "Selected" once the user selects a
 ![Mobile Compare](./frontend/public/ss/SS9.png)
 This is a Mobile Compare page. Users can compare 2 mobiles.
 
-## User Logout
+## Logout
 ![User Logout](./frontend/public/ss/SS6.png)
 Users can see the Logout button once they click on the User Name and Role dropdown. After clicking the logout button the user will be logged out and will be redirected to the login page.
